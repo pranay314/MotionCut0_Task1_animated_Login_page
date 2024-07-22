@@ -1,0 +1,76 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('RS4956_182230177-low_0.jpg'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+  max-width: 300px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+  border-radius: 10px;
+  animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form input,
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.login-form input:focus,
+.login-form button:focus {
+  outline: none;
+  border-color: dodgerblue;
+}
+
+.login-form button {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #007bff; /* Darker blue on hover */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
